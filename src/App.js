@@ -4,7 +4,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import store from "./ducks/store";
 import routes from "./routes";
-import Nav from "./components/Nav/Nav";
+import SideNav from "./components/Nav/SideNav";
+import TopNav from "./components/Nav/TopNav";
 import "./App.css";
 
 class App extends Component {
@@ -12,9 +13,12 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <div>
-            <Nav />
-            {routes}
+          <div className="outerDiv">
+            <SideNav />
+            <div className="mainContentDiv">
+              <TopNav />
+              {routes}
+            </div>
           </div>
         </Router>
       </Provider>

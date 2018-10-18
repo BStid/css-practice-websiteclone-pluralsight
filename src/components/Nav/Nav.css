@@ -1,0 +1,149 @@
+.filler {
+  position: relative;
+  width: 33vw;
+}
+
+.header {
+  width: 1500px;
+  height: 7vh;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: flex-start;
+}
+.iconHomePage {
+  height: 7vh;
+  width: 10vw;
+  background-color: rgb(34, 34, 34);
+  margin: 0px 1px 1px 130px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo {
+  filter: invert(100%);
+  height: 50%;
+  width: auto;
+  position: relative;
+  top: 25%;
+  left: 5%;
+}
+.pluralSightText {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  letter-spacing: 0.07rem;
+  font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica,
+    Roboto, Arial, sans-serif;
+  text-decoration: none;
+  position: relative;
+  top: 35%;
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+a:active,
+a:hover,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #aaaaaa;
+}
+
+.searchBar {
+  background-color: #363636;
+  height: 55%;
+  width: 25%;
+  margin: 15px;
+  border: 1px solid #212222;
+  color: #181818;
+  font-size: 14px;
+  letter-spacing: 0.21px;
+  text-align: start;
+  outline: none;
+  padding-left: 3%;
+  font-weight: 600;
+}
+.searchIcon {
+  filter: invert(100%);
+  height: 1.6rem;
+  width: auto;
+  position: absolute;
+  top: 2.2%;
+  left: 18%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.sideNav {
+  height: 90vh;
+  width: 10vw;
+  background-color: rgb(34, 34, 34);
+  margin-left: 130px;
+  display: relative;
+  flex-direction: column;
+}
+
+.sideNav a:active,
+.sideNav a:hover,
+.sideNav a:visited,
+.sideNav a:link {
+  text-decoration: none;
+  color: #aaaaaa;
+  margin: 5px 40px;
+  padding: 5px 0px;
+}
+
+.homeIcon,
+.browseIcon,
+.pathsIcon,
+.channelsIcon,
+.bookmarksIcon,
+.notesIcon {
+  height: 22px;
+  width: auto;
+  filter: invert(100%);
+  opacity: 0.5;
+  margin: 0px 15px;
+  position: relative;
+  top: 4px;
+  color: #aaaaaa;
+}
+
+.homeButton,
+.browseButton,
+.pathsButton,
+.channelsButton,
+.bookmarksButton,
+.notesButton {
+  height: 27px;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.userProfileCard {
+  width: 18vw;
+  display: flex;
+  padding-top: 13px;
+  justify-content: flex-end;
+  color: white;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+}
+.userImage {
+  height: 60%;
+  width: 10%;
+  position: relative;
+  top: 8%;
+  margin-left: 21px;
+}
+.moreContainer {
+  width: 4vw;
+  cursor: pointer;
+}
+.moreIcon {
+  position: relative;
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  width: auto;
+  filter: invert(100%);
+  opacity: 0.5;
+}

@@ -2,3 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
+.outerDiv {
+  background-color: rgb(24, 24, 24);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
