@@ -1,1 +1,1 @@
-Simple React-Redux Boilerplate. Don't forget to changes the values!
+Practice building a website with CSS. To add functionality as needed.
