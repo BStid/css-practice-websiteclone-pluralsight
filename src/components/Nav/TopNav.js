@@ -16,9 +16,11 @@ export default function TopNav() {
         />
         <div className="filler" />
         <div className="userProfileCard">
-          User Name
-          <br />
-          Email
+          <div className="userInfo">
+            <p className="userName">User</p>
+            <br />
+            <p className="userEmail">thisismyemail@email.com</p>
+          </div>
           <img src={userDefaultIcon} alt="user picture" className="userImage" />
         </div>
         <div className="moreContainer">

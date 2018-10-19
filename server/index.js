@@ -1,11 +1,11 @@
 require("dotenv").config();
 const express = require("express");
 const { json } = require("body-parser");
-const massive = require("massiv");
+const massive = require("massive");
 const axios = require("axios");
 const session = require("express-session");
 const cors = require("cors");
-const port = process.env.SERVER_PORT || 3005;
+const port = 3009;
 
 //require any middleware down the road...
 // app.use(anyMiddleware.js) you have
@@ -13,6 +13,8 @@ const app = express();
 
 app.use(json());
 app.use(cors());
+
+const { getItems } = require("./controllers/main_Ctrl");
 
 app.use(
   session({
@@ -25,14 +27,17 @@ app.use(
   })
 );
 
+//endpoints
+app.get("/api/items", getItems);
+
 //Massive Use - - dbInstance call to create a table also included - -
-/*
+
 massive(process.env.CONNECTION_STRING)
   .then(dbInstance => {
     app.set("db", dbInstance);
     // dbInstance
-    //   .create_table_here()
-    //   .then(resonse => {
+    //   .alter_something()
+    //   .then(response => {
     //     console.log(response);
     //   })
     //   .catch(e => console.log(e));
@@ -40,12 +45,15 @@ massive(process.env.CONNECTION_STRING)
   .catch(error => {
     console.log(error);
   });
-  */
 
 //!!!!!
-//Express.static to join the files to build ---- when ready, run "npm build"
+//Express.static to join the files to build ---- when ready, run "npm run build"
 /*
-app.use(express.static(`${__dirname}/build`));
+app.use(express.static(`${__dirname}/../build`));
+
+app.get('*', (req,res)=>{
+  res.sendFile(path.join(__dirname, '../build/index.html');)
+})
 */
 //!!!!!
 

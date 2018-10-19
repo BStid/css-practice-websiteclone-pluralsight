@@ -1,6 +1,5 @@
--- CREATE TABLE changetablename(
---     id SERIAL PRIMARY KEY,
---     column1 VARCHAR(100),
---     column2 INTEGER,
---     column3 TEXT
--- );
+CREATE TABLE pluralsight_demo(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    image TEXT
+);

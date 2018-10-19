@@ -9,6 +9,8 @@
   background-color: rgb(34, 34, 34);
   display: flex;
   justify-content: flex-start;
+  z-index: 7;
+  position: fixed;
 }
 .iconHomePage {
   height: 7vh;
@@ -16,6 +18,7 @@
   background-color: rgb(34, 34, 34);
   margin: 0px 1px 1px 130px;
   display: flex;
+  position: relative;
   justify-content: space-evenly;
 }
 
@@ -67,18 +70,21 @@ a:link {
   height: 1.6rem;
   width: auto;
   position: absolute;
-  top: 2.2%;
-  left: 18%;
+  top: 29.2%;
+  left: 2%;
   opacity: 0.5;
   cursor: pointer;
 }
 .sideNav {
-  height: 90vh;
+  height: 100vh;
   width: 10vw;
   background-color: rgb(34, 34, 34);
   margin-left: 130px;
   display: relative;
   flex-direction: column;
+}
+.sideContainer {
+  position: fixed;
 }
 
 .sideNav a:active,
@@ -87,7 +93,7 @@ a:link {
 .sideNav a:link {
   text-decoration: none;
   color: #aaaaaa;
-  margin: 5px 40px;
+  /* margin: 5px 40px; */
   padding: 5px 0px;
 }
 
@@ -106,6 +112,22 @@ a:link {
   top: 4px;
   color: #aaaaaa;
 }
+.homeButton:hover,
+.browseButton:hover,
+.pathsButton:hover,
+.channelsButton:hover,
+.bookmarksButton:hover,
+.notesButton:hover,
+.homeIcon:hover,
+.browseIcon:hover,
+.pathsIcon:hover,
+.channelsIcon:hover,
+.bookmarksIcon:hover,
+.notesIcon:hover {
+  color: white;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.05);
+}
 
 .homeButton,
 .browseButton,
@@ -115,8 +137,10 @@ a:link {
 .notesButton {
   height: 27px;
   font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bolder;
+  padding: 10px 5px;
+  transition: 0.3s;
 }
 
 .userProfileCard {
@@ -127,12 +151,26 @@ a:link {
   color: white;
   font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
 }
+.userName {
+  position: relative;
+  top: 28%;
+  font-weight: 600;
+}
+.userInfo {
+  position: relative;
+  bottom: 9px;
+  text-align: right;
+}
 .userImage {
   height: 60%;
   width: 10%;
   position: relative;
   top: 8%;
   margin-left: 21px;
+}
+.userEmail {
+  color: #888888;
+  font-size: 11px;
 }
 .moreContainer {
   width: 4vw;

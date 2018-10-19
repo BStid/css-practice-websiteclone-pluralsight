@@ -1,4 +1,82 @@
 .homeOuter {
   color: white;
   display: flex;
+  height: 100%;
+  width: 100%;
+  top: 7%;
+  position: relative;
+}
+.bottomText {
+  margin-top: 10px;
+  margin-right: 3px;
+  color: #f96816;
+  font-size: 13px;
+  font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica,
+    Roboto, Arial, sans-serif;
+  font-weight: 500;
+}
+.bottomText:visited {
+  color: #f96816;
+}
+.orangeArrow {
+  margin-left: 5px;
+}
+.topHomeDiv {
+  height: 20vh;
+  width: 78vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+.leadText {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica,
+    Roboto, Arial, sans-serif;
+  color: #ffffff;
+  position: relative;
+  margin-bottom: 3px;
+}
+.dropDownButton {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+.roleIQButton {
+  width: 25%;
+  font-size: 16px;
+  color: rgb(97, 97, 97);
+  background-color: rgb(54, 54, 54);
+  margin-left: 16px;
+  font-weight: 700;
+  border-radius: 1px;
+  border: 1px solid rgb(54, 54, 54);
+}
+.roleIQpic {
+  height: 20%;
+  width: 20%;
+  margin-left: 10px;
+  position: relative;
+  top: 0;
+  filter: sepia() saturate(10000%) hue-rotate(460deg) invert(86%);
+}
+.selectBox {
+  width: 70%;
+  color: #555555;
+  font-weight: 700;
+  font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica,
+    Roboto, Arial, sans-serif;
+}
+.subTextHome {
+  margin-top: 2px;
+  font-size: 16px;
+  font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica,
+    Roboto, Arial, sans-serif;
+  letter-spacing: 1.21px;
+  color: #cccccc;
 }

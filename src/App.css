@@ -9,5 +9,13 @@
   width: 100vw;
   display: flex;
   justify-content: flex-start;
-  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: fixed;
+}
+
+.mainContentDiv {
+  position: relative;
+  display: flex;
+  left: 323px;
 }
