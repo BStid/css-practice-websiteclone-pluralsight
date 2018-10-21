@@ -4,15 +4,18 @@ import { connect } from "react-redux";
 import Select from "react-select";
 import { Link } from "react-router-dom";
 import orangeArrow from "../../pictures/orangeArrow.svg";
-import roleIQ from "./pictures/roleIQ.svg";
+import roleIQ from "./pictures/role_IQ.svg";
+
+import ContinueWatching from "./ContinueWatching/ContinueWatching";
 import "./Home.css";
 
 class Home extends Component {
   render() {
+    console.log(this.props);
     const options = [
-      { value: "chocolate", label: "Chocolate" },
-      { value: "strawberry", label: "Strawberry" },
-      { value: "vanilla", label: "Vanilla" }
+      { value: "developer", label: "Developer" },
+      { value: "business", label: "Business" },
+      { value: "audio", label: "Audio" }
     ];
     return (
       <div className="homeOuter">
@@ -37,6 +40,7 @@ class Home extends Component {
             <img src={orangeArrow} alt="" className="orangeArrow" />
           </Link>
         </div>
+        <ContinueWatching />
       </div>
     );
   }

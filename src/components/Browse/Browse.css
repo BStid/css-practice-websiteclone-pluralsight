@@ -15,12 +15,11 @@
 .browseContainer {
   height: 50%;
   width: 17%;
-  border: 1px white solid;
+
   overflow: hidden;
   margin: 0px 5px;
 }
 .pictures {
   height: 83%;
   width: auto;
-  border: 1px solid white;
 }

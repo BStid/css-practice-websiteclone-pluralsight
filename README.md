@@ -1,1 +1,1 @@
-Practice building a website with CSS. To add functionality as needed.
+Practice building a website with CSS. Will add functionality as needed.
