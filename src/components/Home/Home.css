@@ -126,11 +126,61 @@
   margin-left: 25px;
   font-weight: 700;
 }
-.cwProgressBar {
-  border: 1px rgba(255, 255, 255, 0.5) solid;
-  width: 79%;
+.progressBarContainer {
+  width: 79.7%;
   position: absolute;
   height: 0.5vh;
-  top: 118px;
+  top: 119px;
   background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: -1px -13px 35px -20px rgba(0, 0, 0, 0.75);
+  border: 1px rgba(0, 0, 0, 0.4) solid;
+}
+
+.progressBar {
+  background-color: rgba(245, 92, 22, 0.7);
+  height: 100%;
+  /* border-right: 1px solid white; */
+}
+.nextArrow {
+  height: 6%;
+  width: auto;
+  filter: invert(100%);
+  position: absolute;
+  top: 28%;
+  right: 5%;
+  cursor: pointer;
+}
+#underOne {
+  width: 4%;
+}
+#one {
+  width: 15%;
+}
+#two {
+  width: 24%;
+}
+#three {
+  width: 34%;
+}
+#four {
+  width: 40%;
+}
+#five {
+  width: 50%;
+}
+#six {
+  width: 58%;
+}
+#seven {
+  width: 68%;
+}
+#eight {
+  width: 82%;
+}
+#nine {
+  width: 90%;
+}
+#complete {
+  width: 100%;
+  background-color: #23aa5a;
 }

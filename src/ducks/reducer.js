@@ -1,14 +1,17 @@
 import axios from "axios";
+import ProgressBar from "../components/Home/ContinueWatching/ProgressBar";
 
 //Add some ACTIONTYPE
 const GET_ITEMS = "GET_ITEMS";
 const UPDATE_INPUT = "UPDATE_INPUT";
+const UPDATE_PROGRESSBAR = "UPDATE_PROGRESSBAR";
 
 //Create InitialState
 const initialState = {
   items: [],
   input: "",
-  isLoading: false
+  isLoading: false,
+  progressClass: ""
 };
 
 //add some SWITCH CASES in the REDUCER
@@ -31,6 +34,11 @@ export default function reducer(state = initialState, action) {
         ...state,
         isLoading: false
       };
+    case UPDATE_PROGRESSBAR:
+      return {
+        ...state,
+        progressClass: action.payload
+      };
     case UPDATE_INPUT:
       console.log(action.payload.target.name, action.payload.target.value);
       return {
@@ -47,6 +55,12 @@ export function getItems() {
   return {
     type: GET_ITEMS,
     payload: axios.get("http://localhost:3009/api/items")
+  };
+}
+export function updateProgressBar(progressClass) {
+  return {
+    type: UPDATE_PROGRESSBAR,
+    payload: progressClass
   };
 }
 export const updateInput = input => {

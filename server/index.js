@@ -35,12 +35,12 @@ app.get("/api/items", getItems);
 massive(process.env.CONNECTION_STRING)
   .then(dbInstance => {
     app.set("db", dbInstance);
-    // dbInstance
-    //   .alter_something()
-    //   .then(response => {
-    //     console.log(response);
-    //   })
-    //   .catch(e => console.log(e));
+    dbInstance;
+    // .alter_something()
+    // .then(response => {
+    //   console.log(response);
+    // })
+    // .catch(e => console.log(e));
   })
   .catch(error => {
     console.log(error);
