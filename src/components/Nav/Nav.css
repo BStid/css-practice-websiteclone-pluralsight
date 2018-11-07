@@ -80,7 +80,7 @@ a:link {
   width: 10vw;
   background-color: rgb(34, 34, 34);
   margin-left: 130px;
-  display: relative;
+  display: flex;
   flex-direction: column;
 }
 .sideContainer {
@@ -184,4 +184,61 @@ a:link {
   width: auto;
   filter: invert(100%);
   opacity: 0.5;
+}
+
+@media (max-width: 1900px) {
+  .sideNav {
+    width: 192px;
+  }
+  .iconHomePage {
+    width: 192px;
+  }
+  /* .header {
+    right: 167px;
+  } */
+}
+
+@media (max-width: 1850px) {
+  .sideNav {
+    margin-left: 60px;
+  }
+  .iconHomePage {
+    margin: 0px 1px 1px 60px;
+  }
+  .topNavContainer {
+    left: 253px;
+    position: fixed;
+  }
+}
+
+@media (max-width: 1730px) {
+  .sideNav {
+    margin-left: 0px;
+  }
+  .iconHomePage {
+    margin: 0px 1px 1px 0px;
+  }
+  .topNavContainer {
+    left: 194px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .searchBar {
+    width: 20%;
+  }
+  .userProfileCard {
+    width: 23vw;
+  }
+}
+@media (max-width: 1450px) {
+  .filler {
+    width: 28vw;
+  }
+}
+
+@media (max-width: 1280px) {
+  .filler {
+    width: 25vw;
+  }
 }

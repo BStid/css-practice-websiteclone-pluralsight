@@ -10,7 +10,7 @@ class TopNav extends Component {
   render() {
     console.log(this.props);
     return (
-      <div>
+      <div className='topNavContainer'>
         <div className="header">
           <img src={searchIcon} alt="search" className="searchIcon" />
           <input

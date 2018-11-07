@@ -19,3 +19,13 @@
   display: flex;
   left: 323px;
 }
+@media (max-width: 1730px) {
+  .mainContentDiv {
+    left: 280px;
+  }
+}
+@media (max-width: 1550px) {
+  .mainContentDiv {
+    left: 215px;
+  }
+}
